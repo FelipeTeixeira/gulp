@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    @include box-sizing();
+}
+
+html,
+body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-width: 320px;
+    background-color: #F4F4F4;
+    font-family: $font;
+    font-size: 16px;
+}
+
+main {
+    display: block;
+    z-index: $z-index-main;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+button {
+    color: $blue;
+    line-height: normal;
+    text-decoration: none;
+    transition: background-color .2s ease, color .2s ease;
+
+    &:focus,
+    &:active {
+        outline: 0;
+    }
+}
